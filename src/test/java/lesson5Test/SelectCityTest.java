@@ -3,6 +3,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.lang.StringUtils;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,6 +32,14 @@ public class SelectCityTest {
     }
     @Test
     void test() throws InterruptedException {
+
+        if (!driver.findElements(By.id("popmechanic-snippet")).isEmpty()) {
+            WebElement ModalCircle = driver.findElement(By.id("popmechanic-snippet"));
+            if (driver instanceof JavascriptExecutor) {
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+                js.executeScript("arguments[0].remove()", ModalCircle);
+            }
+        }
 
         WebElement webElement5 = driver.findElement(By.id("regionUnconfirm"));
         webElement5. click();

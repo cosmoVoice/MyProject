@@ -2,6 +2,7 @@ package lesson5Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,10 +34,13 @@ public class RepeatOrderTest {
         WebElement webElement5 = driver.findElement(By.xpath("//*[@id=\"cart\"]/div[2]/div[1]/a"));
         webElement5.click();
 
-
-        //WebElement webElement6 = driver.findElement(By.name("phone"));
-        //webElement6.click();
-
+        if (!driver.findElements(By.id("popmechanic-snippet")).isEmpty()) {
+            WebElement ModalCircle = driver.findElement(By.id("popmechanic-snippet"));
+            if (driver instanceof JavascriptExecutor) {
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+                js.executeScript("arguments[0].remove()", ModalCircle);
+            }
+        }
 
         WebElement webElement7 = driver.findElement(By.xpath("//*[@id=\"modal-repeat\"]/div/div/div/div[2]/div/form/div[1]/input"));
         webElement7.sendKeys("89219545805");
