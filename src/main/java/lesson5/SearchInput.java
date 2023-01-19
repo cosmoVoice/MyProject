@@ -1,4 +1,4 @@
-package lesson3;
+package lesson5;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,8 +9,7 @@ import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-public class AddProduct {
-
+public class SearchInput {
     public static void main(String[] args) throws InterruptedException {
 
 
@@ -35,20 +34,13 @@ public class AddProduct {
         WebElement webElement4 = driver.findElement(By.xpath("//*[@id=\"rso\"]/div[1]/div/div/table/tbody/tr[3]/td/div/h3/a"));
         webElement4.click();
 
-        //карточка товара
-        WebElement webElement5 = driver.findElement(By.xpath("//*[@id=\"content\"]/div[9]/div[2]/div[2]/div/div/div[1]/div[3]/a[1]"));
+        WebElement webElement5 = driver.findElement(By.xpath("//*[@id=\"mainBlock\"]/div[2]/div/div/div/form/div[1]"));
         webElement5.click();
         Thread.sleep(5000);
-        // увеличние количества
-        WebElement webElement6 = driver.findElement(By.xpath("//*[@id=\"good30616\"]/div[3]/div/div/button[2]"));
-        webElement6.click();
-
-        Thread.sleep(5000);
-
-        // добавить в корзину
-        WebElement webElement7 = driver.findElement(By.cssSelector("#getOrderButton > div:nth-child(2) > button"));
+        WebElement webElement6 = driver.findElement(By.cssSelector("#search-input"));
+        webElement6.sendKeys("ошейник");
+        WebElement webElement7 = driver.findElement(By.xpath("//*[@id=\"mainBlock\"]/div[2]/div/div/div/form/div[2]/input"));
         webElement7.click();
-
         //driver.quit();
     }
 }

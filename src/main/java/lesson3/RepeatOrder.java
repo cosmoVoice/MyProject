@@ -1,5 +1,6 @@
 package lesson3;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -48,6 +49,7 @@ public class RepeatOrder {
 
         WebElement webElement8 = driver.findElement(By.xpath("//*[@id=\"modal-repeat\"]/div/div/div/div[2]/div/form/div[2]/div[1]/button"));
         webElement8.click();
+        Assertions.assertEquals("Москва",driver.getTitle(),"Не та страница");
 
         //driver.quit();
     }
