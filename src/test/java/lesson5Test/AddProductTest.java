@@ -53,9 +53,9 @@ public class AddProductTest {
 
 
         // добавить в корзину
-        WebElement webElement7 = driver.findElement(By.cssSelector("#getOrderButton > div:nth-child(2) > button"));
+        WebElement webElement7 = driver.findElement(By.xpath("/html/body/div[5]/div[1]/div[3]/div/div[3]/div[2]/div[1]/div/div[2]/div[6]/div[2]/button"));
         webElement7.click();
-        Thread.sleep(5000);
+        Thread.sleep(10000);
 
         // появилась кнопка Оформить товар?
 
