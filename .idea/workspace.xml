@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e34c33a-753d-4f86-ba50-367cd61cccfe" name="Changes" comment="lesson4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/BackCall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/SearchInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/AddProductTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/BackCallTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/RepeatOrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/SearchInCatalogTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/SearchInputTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/SelectCityTest.java" afterDir="false" />
+    <list default="true" id="0e34c33a-753d-4f86-ba50-367cd61cccfe" name="Changes" comment="lesson5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson3/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson3/AddProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson3/RepeatOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson3/RepeatOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/AddProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/AddProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/BackCallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/BackCallTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/SearchInCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/SearchInCatalogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/SearchInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/SearchInputTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +44,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.AddProductTest.test">
-    <configuration name="AddProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson3.AddProduct" />
-      <module name="myProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BackCallTest.test">
     <configuration name="AddProductTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myProject" />
       <extension name="coverage">
@@ -95,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepeatOrderTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchInCatalogTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myProject" />
       <extension name="coverage">
         <pattern>
@@ -104,14 +86,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="lesson5Test" />
-      <option name="MAIN_CLASS_NAME" value="lesson5Test.RepeatOrderTest" />
+      <option name="MAIN_CLASS_NAME" value="lesson5Test.SearchInCatalogTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectCityTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchInputTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson5Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson5Test" />
+      <option name="MAIN_CLASS_NAME" value="lesson5Test.SearchInputTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectCityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myProject" />
       <extension name="coverage">
         <pattern>
@@ -121,19 +119,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="lesson5Test" />
       <option name="MAIN_CLASS_NAME" value="lesson5Test.SelectCityTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddProductTest.test" />
-        <item itemvalue="Application.AddProduct" />
-        <item itemvalue="JUnit.RepeatOrderTest.test" />
         <item itemvalue="JUnit.BackCallTest.test" />
-        <item itemvalue="JUnit.SelectCityTest.test" />
+        <item itemvalue="JUnit.SearchInCatalogTest.test" />
+        <item itemvalue="JUnit.SearchInputTest.test" />
+        <item itemvalue="JUnit.SelectCityTest" />
+        <item itemvalue="JUnit.AddProductTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674059209202</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lesson5">
+      <created>1674134908754</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674134908754</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +236,8 @@
     <MESSAGE value="lesson3" />
     <MESSAGE value="проект" />
     <MESSAGE value="lesson4" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson4" />
+    <MESSAGE value="lesson5" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

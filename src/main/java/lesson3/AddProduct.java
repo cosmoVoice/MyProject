@@ -39,6 +39,14 @@ public class AddProduct {
         WebElement webElement5 = driver.findElement(By.xpath("//*[@id=\"content\"]/div[9]/div[2]/div[2]/div/div/div[1]/div[3]/a[1]"));
         webElement5.click();
         Thread.sleep(5000);
+
+        if(!driver.findElements(By.cssSelector(".flocktory-widget-overlay")).isEmpty()){
+          WebElement Modal = driver.findElement(By.cssSelector(".flocktoru-widget-overlay"));
+          if(driver instanceof JavascriptExecutor){
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+              js.executeScript("arguments[0].remove()",Modal);
+            }
+      }
         // увеличние количества
         WebElement webElement6 = driver.findElement(By.xpath("//*[@id=\"good30616\"]/div[3]/div/div/button[2]"));
         webElement6.click();

@@ -44,7 +44,10 @@ public class SearchInCatalogTest {
         WebElement webElement9 = driver.findElement(By.xpath("//*[@id=\"vkus\"]/div[2]/div[2]/button"));
         webElement9.click();
         Thread.sleep(5000);
-        Assertions.assertEquals("Москва",driver.getTitle(),"Не та страница");
+
+        //Корм Родные корма сухой корм для волнистых попугаев, с ягодами - 500 г
+        WebElement webElement10 = driver.findElement(By.xpath("//*[@id=\"goodSet1\"]/div[2]/div/div/div[1]/div[3]/a[1]"));
+        Assertions.assertEquals("Родные корма", webElement10.getText());
     }
     // @AfterAll
     //static void close(){

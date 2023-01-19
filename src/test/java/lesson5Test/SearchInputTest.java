@@ -36,7 +36,9 @@ public class SearchInputTest {
         webElement6.sendKeys("ошейник");
         WebElement webElement7 = driver.findElement(By.xpath("//*[@id=\"mainBlock\"]/div[2]/div/div/div/form/div[2]/input"));
         webElement7.click();
-        Assertions.assertEquals("Москва",driver.getTitle(),"Не та страница");
+        //результаты поиска
+        WebElement webElement8 = driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[3]/div/div/div[2]/h1[2]"));
+        Assertions.assertEquals("Результаты поиска: ошейник", webElement8.getText());
     }
     // @AfterAll
     //static void close(){

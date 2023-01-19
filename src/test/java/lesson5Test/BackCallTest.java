@@ -39,7 +39,7 @@ public class BackCallTest {
         webElement8.click();
 
        WebElement webElement9 = driver.findElement(By.xpath("//WebElement webElement8 = driver.findElement(By.xpath(\"//*[@id=\\\"modal-cart\\\"]/div/div/div/div[2]/div[2]/div[4]/div[1]/a\"));"));
-        //Assertions.assertEquals("Москва",driver.getTitle(),"Не та страница");
+        Assertions.assertEquals("Необходимо Ваше согласие на обработку персональных данных!",driver.getTitle(),"Необходимо Ваше согласие на обработку персональных данных!");
 
     }
     // @AfterAll
