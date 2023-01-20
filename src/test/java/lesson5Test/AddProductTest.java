@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
-
+import org.openqa.selenium.interactions.Actions;
 public class AddProductTest {
     static WebDriver driver;
 
@@ -51,15 +51,25 @@ public class AddProductTest {
         webElement6.click();
         Thread.sleep(5000);
 
+        if (!driver.findElements(By.cssSelector(".flocktory-widget-overlay")).isEmpty()) {
+            WebElement Modal = driver.findElement(By.cssSelector(".flocktory-widget-overlay"));
+            if (driver instanceof JavascriptExecutor) {
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+                js.executeScript("arguments[0].remove()", Modal);
+            }
+        }
 
-        // добавить в корзину
+        // добавить в корзину,мешает верстка панели "Подписаться"
         WebElement webElement7 = driver.findElement(By.xpath("/html/body/div[5]/div[1]/div[3]/div/div[3]/div[2]/div[1]/div/div[2]/div[6]/div[2]/button"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", webElement7);
+        Thread.sleep(5000);
         webElement7.click();
-        Thread.sleep(10000);
+        Thread.sleep(5000);
+
 
         // появилась кнопка Оформить товар?
 
-        WebElement webElement8 = driver.findElement(By.cssSelector("#modal-cart > div > div > div > div.add-cart > div.add-cart__inner > div.add-cart__foot.clearfix > div:nth-child(1) > a"));
+        WebElement webElement8 = driver.findElement(By.xpath("/html/body/div[5]/div[8]/div/div/div/div[2]/div[2]/div[4]/div[1]/a"));
         Assertions.assertEquals("Оформить заказ", webElement8.getText());
     }
             // @AfterAll
