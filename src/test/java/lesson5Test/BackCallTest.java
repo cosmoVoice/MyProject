@@ -9,10 +9,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.Alert;
-
+import io.qameta.allure.*;
 public class BackCallTest {
     static WebDriver driver;
-
+    @Test
+    @DisplayName("Обратный звонок")
+    @Description("Заказ звонка для обратной связи")
+    @Severity(SeverityLevel.NORMAL)
     @BeforeAll
     static void init() {
         WebDriverManager.chromedriver().setup();

@@ -8,10 +8,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
-
+import io.qameta.allure.*;
 public class SearchInputTest {
     static WebDriver driver;
-
+    @Test
+    @DisplayName("Поиск через поисковую строку")
+    @Description("Поиск товара с использованием поисковой строки")
+    @Severity(SeverityLevel.NORMAL)
     @BeforeAll
     static void init() {
         WebDriverManager.chromedriver().setup();

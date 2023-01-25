@@ -9,11 +9,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
-
+import io.qameta.allure.*;
 
 public class SelectCityTest {
     static WebDriver driver;
-
+    @Test
+    @DisplayName("Выбор города")
+    @Description("Изменение местоположения")
+    @Severity(SeverityLevel.MINOR)
     @BeforeAll
     static void init() {
         WebDriverManager.chromedriver().setup();

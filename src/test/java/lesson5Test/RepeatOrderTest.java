@@ -8,11 +8,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
-
+import io.qameta.allure.*;
 
 public class RepeatOrderTest {
     static WebDriver driver;
-
+    @Test
+    @DisplayName("Повторить заказ")
+    @Description("Оформление поторного заказа")
+    @Severity(SeverityLevel.NORMAL)
     @BeforeAll
     static void init() {
         WebDriverManager.chromedriver().setup();

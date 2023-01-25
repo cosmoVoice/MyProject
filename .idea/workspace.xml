@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e34c33a-753d-4f86-ba50-367cd61cccfe" name="Changes" comment="lesson5">
+    <list default="true" id="0e34c33a-753d-4f86-ba50-367cd61cccfe" name="Changes" comment="lesson6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/AddProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/AddProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/BackCallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/BackCallTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/RepeatOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/RepeatOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/SearchInCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/SearchInCatalogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/SearchInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/SearchInputTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/SelectCityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/SelectCityTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674208449054</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="lesson6">
+      <created>1674647132947</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674647132947</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,7 +286,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/lesson5Test/BackCallTest.java</url>
-          <line>32</line>
+          <line>35</line>
           <properties class="lesson5Test.BackCallTest" method="test">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

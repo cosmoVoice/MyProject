@@ -8,10 +8,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
-
+import io.qameta.allure.*;
 public class SearchInCatalogTest {
     static WebDriver driver;
-
+    @Test
+    @DisplayName("Поиск в каталоге")
+    @Description("Поиск товара с использованием каталога")
+    @Severity(SeverityLevel.NORMAL)
     @BeforeAll
     static void init() {
         WebDriverManager.chromedriver().setup();

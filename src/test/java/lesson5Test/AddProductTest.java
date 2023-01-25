@@ -8,10 +8,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.interactions.Actions;
+import io.qameta.allure.*;
 public class AddProductTest {
-    static WebDriver driver;
 
+    static WebDriver driver;
+    @Test
+    @DisplayName("Добавление товара в корзину")
+    @Description("Этап оформления заказа")
+    @Severity(SeverityLevel.CRITICAL)
     @BeforeAll
     static void init() {
         WebDriverManager.chromedriver().setup();
