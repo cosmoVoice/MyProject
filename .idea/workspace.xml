@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0e34c33a-753d-4f86-ba50-367cd61cccfe" name="Changes" comment="lesson5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson5Test/AddProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson5Test/AddProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674150058826</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lesson5">
+      <created>1674208449054</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674208449054</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +260,8 @@
     <MESSAGE value="проект" />
     <MESSAGE value="lesson4" />
     <MESSAGE value="lesson5" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson5" />
+    <MESSAGE value="lesson6" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
